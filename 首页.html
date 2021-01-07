@@ -1,0 +1,222 @@
+
+
+
+
+
+<html lang="zh-cn">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="mr的博客">
+	<meta name="Keywords" content="mr的博客">
+	<meta name="Description" content="mr的博客,技术分享,记录回忆">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<title>mr的博客</title>
+
+
+	
+	<link rel="stylesheet" href="common.css">
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="common.js"></script>
+
+</head>
+
+<body ondragstart="return false" oncontextmenu="return false" onselectstart="return false"
+	onselect="document.selection.empty()">
+	<!--[if lt IE 8]>
+			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+	<header>
+		<div class="header-box">
+
+			<form action="">
+
+				<input type="text" name="search" placeholder="搜索..">
+			</form>
+
+
+
+
+		</div>
+	</header>
+	<nav class="nav">
+
+		<ul>
+			<li class="current"></li>
+			<li><a href="study.html">首页</a></li>
+			<li><a href="111.html">文章</a></li>
+			<li><a href="个人信息.html" target="_blank">个人信息</a></li>
+			<li><a href="留言板.html">留言板</a></li>
+		</ul>
+	</nav>
+	<div class="embellish">
+
+		<div class="aside" style="position: static; top: 20px;"></div>
+	</div>
+	<section>
+		<div class="banner-box clearfix">
+			<div class="banner r">
+				<div>
+					
+					<img class="img-ban" src="4.jpg">
+				</div>
+				
+			</div>
+			<div class="art l">
+				<h2 class="art-txt"> <span>推荐文章</span> </h2>
+				<ul class="art-list">
+					<li><a href="#"><em class="iconfont icon-dian "></em><span>mysql安装教程</span></a></li>
+					<li><a href="#"><em class="iconfont icon-dian "></em><span>数据结构算法</span></a></li>
+					<li><a href="#"><em class="iconfont icon-dian "></em><span>sql初步</span></a></li>
+					<li><a href="#"><em class="iconfont icon-dian "></em><span>高数知识点总结</span></a></li>
+					<li><a href="#"><em class="iconfont icon-dian "></em><span>大学物理</span></a></li>
+					<li><a href="#"><em class="iconfont icon-dian "></em><span>web前端</span></a></li>
+					<li><a href="#"><em class="iconfont icon-dian "></em><span>java web</span></a></li>
+				</ul>
+			</div>
+		</div>
+		<article>
+			<aside class="left-box l">
+				<div class="art Label clearfix">
+					<h2 class="art-txt"> <span>友情连接</span> </h2>
+					<div>
+						<a class="btn label" href="#">csdn</a><a class="btn label" href="#">twiter</a>
+						<a class="btn label" href="#">博客园</a><a class="btn label" href="#">知乎</a>
+						
+					</div>
+				</div>
+
+
+
+			</aside>
+			<div class="art-right r">
+				<h2 class="art-txt">&nbsp;&nbsp; <span>最新文章</span></h2>
+
+
+				<div class="art-model">
+					<h3><a href="#" class="#">解决mysql：ERROR 1045 (28000): Access denied for user 'root'@'localhost'
+							(using password: NO/YES)</a></h3>
+
+					<dl class="img-txt">
+
+						<dd>
+							<p class="deatil"> 有时候我们登录Mysql输入密码的时候，会出现这种情况
+
+								　　mysql -u root -p
+
+								　　Enter Password &gt; '密码'
+
+								　　错误：ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+
+								　　或者：错误：ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password:
+								NO)</p>
+							<a href="文章1.html" class="btn  c-fff">查看全文</a>
+						</dd>
+					</dl>
+				</div>
+
+				<div class="art-model">
+					<h3><a href="#" class="#">Runnable和Thread的区别</a></h3>
+
+					<dl class="img-txt">
+
+						<dd>
+							<p class="deatil"> 1、Runnable是接口，Thread是类且实现Runnable接口；
+
+								2、Thread线程是独立的不共享资源，Runnable是资源共享；
+
+								3、在使用Runnable定义的子类中没有start()方法，只有Thread类中才有；
+
+								4、Thread类，有一个构造方法：public Thread(Runnable targer)
+
+								此构造方法接受Runnable的子类实例，也就是说可以通过Thread类来启动Runnable实现的多线程。
+
+								复制代码
+								public Thread(Runnable runnable)
+								{
+								daemon = false;
+								stillborn = false;
+								threadLocals = null;
+								inheritableThreadLocals = null;
+								threadStatus = 0;
+								blockerLock = new Object();
+								init(null, runnable, (new
+								StringBuilder()).append("Thread-").append(nextThreadNum()).toString(), 0L);
+								}
+								复制代码
+
+
+
+
+								使用情况
+
+								在程序开发中只要是多线程多以实现Runnable接口为主。
+
+								实现Runnable接口相比继承Thread类有如下好处：
+								1、避免继承的局限，一个类可以继承多个接口。
+								2、适合于资源的共享。
+
+								举例
+
+								三个网友分别抢10张优惠券
+
+
+
+
+
+								继承Thread
+
+								复制代码
+								/**
+								* MyThreadWithExtends
+								*
+								* @author Stephen
+								* @time 2020-7-1 17:59:02
+								*/
+								public class MyThreadWithExtends extends Thread {
+
+								private int number = 10;
+
+								@Override
+								public void run() {
+
+								for (int i = 0; i &lt;= 100; i++) {
+								if (number &gt; 0) {
+								number--;//优惠卷减一
+								System.out.println(Thread.currentThread().getName() + "顾客抢到手，剩余优惠券：" + number);
+								}
+								}
+								}
+
+								public static void main(String[] args) {
+								MyThreadWithExtends thread1 = new MyThreadWithExtends();
+								MyThreadWithExtends thread2 = new MyThreadWithExtends();
+								MyThreadWithExtends thread3 = new MyThreadWithExtends();
+
+								thread1.start();
+								thread2.start();
+								thread3.start();
+
+								// 每个线程都独立，不共享资源，每个线程都抢了10张，总共抢了30张。如果真抢，就有问题了。
+								}
+
+								}
+
+							</p>
+							<a href="文章2.html" class="btn  c-fff">查看全文</a>
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</article>
+	</section>
+	<footer class="clearfix">
+		<p>@mr的个人博客</p>
+	</footer>
+	<script type="text/javascript" src="common.js"></script>
+
+
+</body>
+
+</html>

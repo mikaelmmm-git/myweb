@@ -1,0 +1,314 @@
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="mr">
+    <meta name="Keywords" content="mr的博客">
+    <meta name="Description" content="mr的博客,技术分享,记录回忆">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <title>mr的博客</title>
+
+   
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body ondragstart="return false" oncontextmenu="return false" onselectstart="return false"
+    onselect="document.selection.empty()">
+    <!--[if lt IE 8]>
+			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+    <header>
+        <div class="header-box">
+
+            <form action="">
+
+                <input type="text" name="search" placeholder="搜索..">
+            </form>
+
+
+
+
+        </div>
+    </header>
+    <nav class="nav">
+
+        <ul>
+        <li class="current"></li>
+        <li><a href="study.html">首页</a></li>
+        <li><a href="111.html">文章</a></li>
+        <li><a href="个人信息.html" target="_blank">个人信息</a></li>
+        <li><a href="留言板.html">留言板</a></li>
+        </ul>
+    </nav>
+    <div class="embellish">
+
+        <div class="aside" style="position: static; top: 20px;"></div>
+    </div>
+    <section>
+
+        <article>
+            <aside class="left-box l">
+
+                <div class="art l">
+                    <h2 class="art-txt"> <span>推荐文章</span> </h2>
+                    <ul class="art-list">
+                    <li><a href="#"><em class="iconfont icon-dian "></em><span>mysql安装教程</span></a></li>
+                    <li><a href="#"><em class="iconfont icon-dian "></em><span>数据结构算法</span></a></li>
+                    <li><a href="#"><em class="iconfont icon-dian "></em><span>sql初步</span></a></li>
+                    <li><a href="#"><em class="iconfont icon-dian "></em><span>高数知识点总结</span></a></li>
+                    <li><a href="#"><em class="iconfont icon-dian "></em><span>大学物理</span></a></li>
+                    <li><a href="#"><em class="iconfont icon-dian "></em><span>web前端</span></a></li>
+                    <li><a href="#"><em class="iconfont icon-dian "></em><span>java web</span></a></li>
+                    </ul>
+                </div>
+
+
+            </aside>
+            <div class="art-right r">
+<div id="cnblogs_post_body" class="blogpost-body">
+    <ul id="right_meun" style="display: inline-block;">
+        <li id="0li"><a href="#_caption_0"><strong>一、下载安装包：</strong></a>
+            <ul></ul>
+        </li>
+        <li id="1li"><a href="#_caption_1"><strong>二、Mysql的配置</strong></a>
+            <ul>
+                <li><a href="#_caption0" style="color:#5f5f5f;">2.1可能会出现的问题</a></li>
+                <li><a href="#_caption1" style="color:#5f5f5f;">2.2命令参考：</a></li>
+            </ul>
+        </li>
+    </ul>
+    <h1>　免安装版的Mysql</h1>
+    <p>　　<span style="font-family: 黑体; font-size: 15px">MySQL关是一种关系数据库管理系统，所使用的 SQL 语言是用于访问<a
+                href="https://baike.baidu.com/item/%E6%95%B0%E6%8D%AE%E5%BA%93/103728" target="_blank"
+                data-lemmaid="103728">数据库</a>的最常用的</span></p>
+    <p><span style="font-family: 黑体; font-size: 15px">标准化语言，其特点为体积小、速度快、总体拥有成本低，尤其是<a
+                href="https://baike.baidu.com/item/%E5%BC%80%E6%94%BE%E6%BA%90%E7%A0%81/7176422" target="_blank"
+                data-lemmaid="7176422">开放源码</a>这一特点，在 Web</span></p>
+    <p><span style="font-family: 黑体; font-size: 15px"> 应用方面 MySQL 是最好的 RDBMS(Relational Database Management
+            System：关系数据</span></p>
+    <p><span style="font-family: 黑体; font-size: 15px">库管理系统)应用软件之一。</span></p>
+    <p>&nbsp;</p>
+    <p><strong>　　</strong><span
+            style="font-family: 黑体; font-size: 15px">在本博文里，我主要以Mysql免安装版为例，帮助大家解决安装与配置mysql的步骤。</span></p>
+    <p><span style="font-family: 黑体; font-size: 15px">&nbsp;</span></p>
+    <p><span style="font-family: 黑体; font-size: 15px">　　首先：要先进入mysql官网里（Mysql的官网--&gt;<a title="Mysql官网"
+                href="https://www.mysql.com/" target="_blank">https://www.mysql.com/</a>），下面是详细步骤：↓</span></p>
+    <p><span style="font-family: 黑体; font-size: 15px">　　(为了方便大家的操作，我的网盘里有安装包：</span></p>
+    <p>　　　　链接：<a title="Winton为你推荐——下载Mysql" href="https://pan.baidu.com/s/1vP-D71PmMsXhLwO8y2lL9A"
+            target="_blank">https://pan.baidu.com/s/1vP-D71PmMsXhLwO8y2lL9A</a><br>　　　　提取码：n4mt<br>　　)</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <a name="_caption_0"></a>
+    <h2><strong>一、下载安装包：</strong></h2>
+    <p><strong>　　</strong><span style="font-family: 黑体; font-size: 15px">①进入官网后，点击"Dowload"，然后页面往下拉</span></p>
+    <p><strong>　　<img src="https://img2018.cnblogs.com/blog/1727568/201909/1727568-20190915192559647-350219166.jpg"
+                alt="" width="1349" height="678" style="cursor: pointer;"></strong></p>
+    <p>　　</p>
+    <p>&nbsp;</p>
+    <p>　　<span
+            style="font-family: 黑体; font-size: 15px">②接下来看到的页面是这样的，红色框框的链接就是mysql社区版，是免费的mysql版本，然后我们点击这个框框的链接：↓</span>
+    </p>
+    <p>&nbsp;</p>
+    <p>　　<img src="https://img2018.cnblogs.com/blog/1727568/201909/1727568-20190915192752591-1371678378.jpg" alt=""
+            style="cursor: pointer;"></p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>　　　<span style="font-family: 黑体; font-size: 15px"> ③接下来跳转到这个页面，在这里，我们只要下载社区版的Server就可以了：↓</span></p>
+    <p><img src="https://img2018.cnblogs.com/blog/1727568/201909/1727568-20190915193055444-1634354218.jpg" alt=""
+            style="cursor: pointer;"></p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>　　<span style="font-family: 黑体; font-size: 15px">④下载免安装版(windows以外的其他系统除外)</span></p>
+    <p>&nbsp;</p>
+    <p><img src="https://img2018.cnblogs.com/blog/1727568/201909/1727568-20190915193247068-1867170933.jpg" alt=""
+            style="cursor: pointer;"></p>
+    <p>&nbsp;</p>
+    <p><strong>　</strong>　&nbsp;&nbsp;<span style="font-family: 黑体; font-size: 16px">***这样，安装包就下载好了！</span></p>
+    <p><span
+            style="font-family: 黑体; font-size: 16px">　　***注意，安装的目录应当放在指定位置，，其次，绝对路径中避免出现中文，推荐首选英文为命名条件！！！！(我的为参考)</span>
+    </p>
+    <p><strong>　　</strong></p>
+    <p><strong>　　<img src="https://img2018.cnblogs.com/blog/1727568/201909/1727568-20190915193949895-2127429091.jpg"
+                alt="" style="cursor: pointer;"></strong></p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <a name="_caption_1"></a>
+    <h2><strong>二、Mysql的配置</strong></h2>
+    <p><strong>　　<span style="font-size: 16px">*以<span
+                    style="font-size: 18pt; background-color: rgba(255, 255, 255, 1); color: rgba(255, 0, 0, 1)">管理员身份</span>打开命令行(如下图所示)，一定要是管理员身份，否则由于后续部分命令需要权限，出现错误！</span></strong>
+    </p>
+    <p><strong>　　<img src="https://img2018.cnblogs.com/blog/1727568/201909/1727568-20190915194138600-1666145922.jpg"
+                alt=""></strong></p>
+    <p><strong>　　</strong></p>
+    <p><strong>　</strong>　<span style="font-family: 黑体; font-size: 15px">①下转到mysql的bin目录下：</span><strong><br></strong>
+    </p>
+    <p>&nbsp;</p>
+    <p>　　<img src="https://img2018.cnblogs.com/blog/1727568/201909/1727568-20190915194319422-1269147823.jpg" alt=""></p>
+    <p>&nbsp;</p>
+    <p>　　<span style="font-size: 15px; font-family: 黑体">②安装mysql的服务：mysqld --install</span></p>
+    <p>&nbsp;</p>
+    <p>　　<img src="https://img2018.cnblogs.com/blog/1727568/201909/1727568-20190915194355509-621408710.jpg" alt=""></p>
+    <p>　　</p>
+    <p>&nbsp;</p>
+    <p>　　<span style="font-family: 黑体; font-size: 15px">③初始化mysql，在这里，初始化会产生一个随机密码,如下图框框所示，记住这个密码，后面会用到(mysqld
+            --initialize --console)</span></p>
+    <p>　　</p>
+    <p>　　<img src="https://img2018.cnblogs.com/blog/1727568/201909/1727568-20190915194537624-1288770126.jpg" alt=""></p>
+    <p>　　</p>
+    <p>　　<span style="font-family: 黑体; font-size: 15px">④开启mysql的服务(net start mysql)</span></p>
+    <p>&nbsp;</p>
+    <p>　　<img src="https://img2018.cnblogs.com/blog/1727568/201909/1727568-20190915194809019-447378790.jpg" alt=""></p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>　　<span
+            style="font-family: 黑体; font-size: 15px">⑤登录验证，mysql是否安装成功！(要注意上面产生的随机密码，不包括前面符号前面的空格，否则会登陆失败)，如果和下图所示一样，则说明你的mysql已经安装成功！注意，，一定要先开启服务，不然会登陆失败，出现拒绝访问的提示符！！！</span>
+    </p>
+    <p>&nbsp;</p>
+    <p>　　<img src="https://img2018.cnblogs.com/blog/1727568/201909/1727568-20190915194855594-1799062186.jpg" alt=""></p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p><span style="font-size: 14pt"><strong><span
+                    style="background-color: rgba(255, 255, 255, 1)">　　修改密码：</span></strong></span></p>
+    <p><span style="font-size: 16px">　　　　由于初始化产生的随机密码太复杂，，不便于我们登录mysql，因此，我们应当修改一个自己能记住的密码！！</span></p>
+    <p>&nbsp;</p>
+    <p><span style="font-size: 16px">　　<img
+                src="https://img2018.cnblogs.com/blog/1727568/201909/1727568-20190915195232011-1164270181.jpg"
+                alt=""></span></p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p><span style="font-size: 16px">　　再次登录验证新密码：</span></p>
+    <p>&nbsp;</p>
+    <p><span style="font-size: 16px">　　<img
+                src="https://img2018.cnblogs.com/blog/1727568/201909/1727568-20190915195310138-1959548424.jpg"
+                alt=""></span></p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p><span style="font-size: 16px">　　</span><span style="font-size: 18px"><strong>设置系统的全局变量：</strong></span></p>
+    <p><span style="font-size: 18px"><strong>　　　　</strong><span
+                style="font-size: 16px">为了方便登录操作mysql，在这里我们设置一个全局变量：↓</span></span></p>
+    <p>&nbsp;</p>
+    <p><span style="font-size: 18px"><span
+                style="font-size: 16px">　　　　①点击"我的电脑"--&gt;"属性"--&gt;''高级系统设置''--&gt;''环境变量'',接下来如下图所操作</span></span>
+    </p>
+    <p><span style="font-size: 18px"><span style="font-size: 16px">　　</span></span></p>
+    <p><span style="font-size: 18px"><span style="font-size: 16px">　　　　<img
+                    src="https://img2018.cnblogs.com/blog/1727568/201909/1727568-20190915195658938-215279743.jpg"
+                    alt=""></span></span></p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p><span style="font-size: 18px"><span style="font-size: 16px">　　　　②把新建的mysql变量添加到Path路径变量中，点击确定，即完成：</span></span>
+    </p>
+    <p>&nbsp;</p>
+    <p><span style="font-size: 18px"><span style="font-size: 16px">　　　　<img
+                    src="https://img2018.cnblogs.com/blog/1727568/201909/1727568-20190915195808186-1920486822.jpg"
+                    alt=""></span></span></p>
+    <p>&nbsp;</p>
+    <p><span style="font-size: 18px"><span style="font-size: 16px">　　　　</span></span></p>
+    <p><span style="font-size: 18px"><span
+                style="font-size: 16px">　　　　配置完成之后，每当我们想要用命令行使用mysql时，只需要win+R，--&gt;输入"cmd"打开命令行，之后输入登录sql语句即可。</span></span>
+    </p>
+    <p>&nbsp;</p>
+    <p><span style="font-size: 18px"><span style="font-size: 16px">　　</span></span></p>
+    <p><span style="font-size: 18px"><span
+                style="font-size: 16px">　　　　③在mysql目录下创建一个ini或cnf配置文件，在这里我创建的是ini配置文件，里面写的代码是mysql的一些基本配置<br></span></span>
+    </p>
+    <p>&nbsp;</p>
+    <p><span style="font-size: 18px"><span style="font-size: 16px">　　　　<img
+                    src="https://img2018.cnblogs.com/blog/1727568/201909/1727568-20190915201058332-997469892.jpg"
+                    alt=""></span></span></p>
+    <p><strong>&nbsp;或者：</strong></p>
+    <div class="cnblogs_code">
+        <div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);"
+                    onclick="copyCnblogsCode(this)" title="复制代码"><img src="//common.cnblogs.com/images/copycode.gif"
+                        alt="复制代码"></a></span></div>
+        <pre><span style="color: rgba(0, 0, 0, 1)">[mysqld]
+# 设置3306端口
+port=3306
+# 设置mysql数据库的数据的存放目录
+datadir=E:\\software\\mysql\\mysql-5.7.27-winx64\\Data 
+# 允许最大连接数
+max_connections=200
+# 允许连接失败的次数。这是为了防止有人从该主机试图攻击数据库系统
+max_connect_errors=10
+# 服务端使用的字符集默认为UTF8
+character-set-server=utf8
+# 创建新表时将使用的默认存储引擎
+default-storage-engine=INNODB
+[mysql]
+# 设置mysql客户端默认字符集
+default-character-set=utf8
+[client]
+# 设置mysql客户端连接服务端时默认使用的端口
+port=3306
+default-character-set=utf8</span></pre>
+        <div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);"
+                    onclick="copyCnblogsCode(this)" title="复制代码"><img src="//common.cnblogs.com/images/copycode.gif"
+                        alt="复制代码"></a></span></div>
+    </div>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p><span style="font-size: 18px"><span style="font-size: 16px">　　就这样，一个免安装版的Mysql就安装并配置完成了</span></span></p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <a name="_caption0"></a>
+    <h3>2.1可能会出现的问题</h3>
+    <p>&nbsp;1、ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO/YES)&nbsp;</p>
+    <p>&nbsp;2、"由于找不到MSVCR120.dll，无法继续执行代码。重新安装程序可能会解决此问题" 或者 "由于找不到VCRUNTIME140_1.dll，无法继续执行代码。重新安装程序可能会解决此问题"&nbsp;
+    </p>
+    <p>&nbsp;</p>
+    <p><strong>解决办法</strong>：&nbsp; 转移至我另外两篇博客</p>
+    <p>1、<a class="entry" href="https://www.cnblogs.com/winton-nfs/p/12956811.html" target="_blank">ERROR 1045 (28000):
+            Access denied for user 'root'@'localhost' (using password: NO/YES)</a>&nbsp;&nbsp;</p>
+    <p>2、<a class="entry" href="https://www.cnblogs.com/winton-nfs/p/13854052.html"
+            target="_blank">解决mysql问题：由于找不到MSVCR120.dll,无法继续执行代码.重新安装程序可能会解决此问题。</a>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <a name="_caption1"></a>
+    <h3>2.2命令参考：</h3>
+    <p>&nbsp;</p>
+    <p><strong>　　<span style="font-family: 黑体; font-size: 16px">①安装服务：</span></strong><span
+            style="font-family: 黑体; font-size: 16px">mysqld --install</span></p>
+    <p><span style="font-family: 黑体; font-size: 16px">&nbsp;</span></p>
+    <p><span style="font-family: 黑体; font-size: 16px"><strong>　　②<strong>初始化：　</strong></strong>mysqld --initialize
+            --console</span></p>
+    <p><span style="font-family: 黑体; font-size: 16px">&nbsp;</span></p>
+    <p><span style="font-family: 黑体; font-size: 16px"><strong><strong>　　③开启服务：</strong></strong>net start mysql</span>
+    </p>
+    <p><span style="font-family: 黑体; font-size: 16px">&nbsp;</span></p>
+    <p><span style="font-family: 黑体; font-size: 16px"><strong><strong>　　④关闭<strong><strong>服务：</strong></strong></strong></strong>net
+            stop mysql</span></p>
+    <p><span style="font-family: 黑体; font-size: 16px">&nbsp;</span></p>
+    <p><span style="font-family: 黑体; font-size: 16px"><strong><strong><strong><strong>　　⑤登录mysql：</strong></strong></strong></strong>mysql
+            -u root -p</span></p>
+    <p><span style="font-family: 黑体; font-size: 16px">&nbsp;</span></p>
+    <p><span style="font-family: 黑体; font-size: 16px"><strong><strong><strong><strong>　　　　Enter
+                            PassWord：(</strong></strong></strong></strong>密码<strong><strong><strong><strong>)</strong></strong></strong></strong></span>
+    </p>
+    <p><span style="font-family: 黑体; font-size: 16px">&nbsp;</span></p>
+    <p><span style="font-family: 黑体; font-size: 16px"><strong><strong><strong><strong>　　⑥修改密码：</strong></strong></strong></strong>alter
+            user 'root'@'localhost' identified by 'root';(by 接着的是密码)</span></p>
+    <p><span style="font-family: 黑体; font-size: 16px">&nbsp;</span></p>
+    <p><span style="font-family: 黑体; font-size: 16px">　　<strong>⑦标记删除mysql服务</strong>：sc delete mysql</span></p>
+    <p>&nbsp;</p>
+    <p>　　</p>
+    <p>&nbsp;</p>
+</div>
+
+            </div>
+        </article>
+    </section>
+    <footer class="clearfix">
+        <p>@mr的个人博客</p>
+    </footer>
+    <script type="text/javascript" src="js/common.js"></script>
+
+
+
+
+</body>
+
+</html>
